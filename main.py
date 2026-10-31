@@ -49,9 +49,14 @@ class DeepSeekUsagePlugin(Star):
 
     @filter.permission_type(filter.PermissionType.ADMIN)
     @filter.command("dsusage")
-    async def query_usage(self, event: AstrMessageEvent, *args):
+    async def query_usage(self, event: AstrMessageEvent): 
         """查询 DeepSeek Token 使用量。输入 /dsusage help 查看帮助。"""
         
+        msg = event.message_str.strip()
+
+        raw_args = msg.split("dsusage", 1)[-1].strip()
+        args = raw_args.split() if raw_args else []
+
         user_token = (self.config.get("deepseek_user_token") or "").strip()
         if not user_token:
             yield event.plain_result("❌ 请先在 WebUI 插件配置中填写 userToken。")
