@@ -1,0 +1,29 @@
+{
+  "deepseek_user_token": {
+    "description": "DeepSeek 网页端 userToken（必填）",
+    "type": "string",
+    "hint": "登录 platform.deepseek.com -> F12 -> Application -> Local Storage -> 复制 userToken 的值",
+    "secret": true,
+    "default": ""
+  },
+  "default_days": {
+    "description": "默认查询天数",
+    "type": "int",
+    "default": 30,
+    "options": [1, 7, 15, 30],
+    "hint": "这是在使用 /dsusage 指令（不带任何参数）时，默认查询的天数。"
+  },
+  "number_format": {
+    "description": "数字展示格式",
+    "type": "string",
+    "default": "comma",
+    "options": ["comma", "short"],
+    "hint": "comma 表示带逗号分段（如 1,000,000）；short 表示缩写字母量（如 1.00M）。"
+  },
+  "request_timeout": {
+    "description": "请求超时时间（秒）",
+    "type": "int",
+    "default": 10,
+    "hint": "单次请求的超时时间，若网络较慢可调大。"
+  }
+}
