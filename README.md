@@ -1,3 +1,11 @@
+# ⚠️ 重要公告：本插件已停止维护并迁移
+
+为了提供更全面、更安全的服务，本插件已与另一插件(astrbot_plugin_deepseek_balance)合并升级并迁移至全新仓库：**[DeepSeek 账户管家 (astrbot_plugin_deepseek_manager)](https://github.com/FurryNanhan/astrbot_plugin_deepseek_manager)**。
+
+新版本统一了余额查询、Token 用量和消费金额，并完美兼容了官方 API 和网页端 Token 两种模式。**本仓库即日起不再接收功能更新，请前往新仓库下载安装。**
+
+👉 [点击查看历史更新日志 (CHANGELOG.md)](./CHANGELOG.md)
+
 # DeepSeek 用量查询插件 (astrbot_plugin_deepseek_usage)
 
 一个基于 AstrBot 的轻量级插件，允许管理员通过指令查询 DeepSeek 账户的历史 Token 使用量。
