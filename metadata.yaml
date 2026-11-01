@@ -2,7 +2,7 @@ name: astrbot_plugin_deepseek_usage
 display_name: DeepSeek 用量查询
 desc: 查询 DeepSeek 账户的历史 Token 使用量，支持自定义天数与日期范围。
 short_desc: 极客级查账神器！支持分段查询历史 Token 与请求次数。
-version: 1.0.1
+version: 1.0.2
 author: FURRY南寒
 repo: https://github.com/FurryNanhan/astrbot_plugin_deepseek_usage
 support_platforms:
